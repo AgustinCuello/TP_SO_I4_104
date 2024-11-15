@@ -6,3 +6,32 @@ C- ¿Qué color de fondo tiene su página en el MASTER?
 Respuesta : quedo con YELLOW Y BLUE 
 D- ¿Qué favicon quedó en el MASTER el de ALFA o el de BETA?
 Respuesta : Quedaron los dos 
+
+
+
+E- ¿Algún integrante tuvo problemas al hacer el push?
+Respuesta: Beta y gamma, debido a que no se hizo un pull a los cambios realizados
+
+F- ¿Qué problemas surgieron?
+Respuesta: Archivos en conflicto,
+
+G- ¿Qué soluciones pueden aplicar y cual seria la consecuencia de cada solución
+adoptada?
+
+Respuesta: Debido a que hicimos git pull nos trajo los cambios pero los archivos tenian conflictos, 
+los editamos, luego hicimos git add con el archivo cuestion, despues el commit, y luego el push
+
+H- ¿Qué sucede si cada uno utiliza el push -f?
+
+Respuesta: Sobreescribe los cambios del otro, porque que fuerza el push propio
+
+I- ¿Qué debo hacer para que el index.html tengas todos los <p> de los puntos 18,19 y 20
+en DESARROLLO ?
+
+clonamos el archivo de la rama testing: git clone -b TESTING https://github.com/AgustinCuello/TP_SO_I4_104
+luego, editamos el index.html con nuestros datos de manera coordinada,
+el primer push fue de alfa, luego beta y gamma tuvieron problemas para pushear porque anteriormente no habian 
+hecho un git pull, la solucion fue, editar el archivo eliminando caracteres especiales, despues ejecutar los comandos:
+git add index.html -> se agrego el archivo ya modificado
+git commit -> se guarda los cambios el staging area (local)
+git push -> subida de cambios al repositorio remoto
